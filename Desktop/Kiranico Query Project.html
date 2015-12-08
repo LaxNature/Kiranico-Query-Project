@@ -1,15 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 
-<h1> USEFUL GAMING SITES </h1>
+</head>
+  <body>
 
-<p><a href="http://kiranico.com/en/mh4u">KiranicoMH4U</a></p>
+  <h1> USEFUL GAMING SITES </h1>
+
+  <p>
+    <a href="http://kiranico.com/en/mh4u">KiranicoMH4U</a>
+  </p>
+
 
     <!-- HTML for the search bar -->
-    <div id="tfheader">
-      <form id="tfnewsearch" method="get" action="http://kiranico.com/en/mh4u//?q=">
-          <input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="Go" class="tfbutton">
+
+    <div id="Kiranico Search">
+      <form id="monsterSearch" method="get" action="http://kiranico.com/en/mh4u/monster/">
+          <input type="text" class="monsterSearch" name="q" size="21" maxlength="120">
+          <input type="submit" value="Search Monsters" class="monsterButton" onclick="itemKeyWordReplace()">
       </form>
-    <div class="tfclear"></div>
+
+      <form id="itemSearch" method="get" action="">
+
+          <input type="text" class="itemSearch" name="q" size="21" maxlength="120">
+          <input type="submit" value="Search Items" class="itemButton" onclick=" itemKeywordReplace()">
+          
+      </form> 
     </div>
 
+    <script>
+      function itemKeywordReplace(){
+
+      // var searchTerms = $('#monsterSearch').val();
+      // var keywords = searchTerms.replace(" ", "-");
+      // $('#form').submit(function(){
+      //   location.href = 'kiranico.com/en/mh4u/item/'+ keywords;
+
+      // }); //end submit
+    // $('#itemSearch').submit(function(){
+
+      // window.location.href = 'google.com';
+    // });
+    
+    // $(location).attr('href', 'google.com');
+    // return true;
+
+    document.getElementById("submit").onclick = function(){
+      location.href = "www.google.com";
+
+    }
+
+
+    alert("Submit button clicked!");
+    // return true;
+     } //end function
+
+
+
+    </script>
+
+
+  </body>
+  <footer>
+  </footer>
+</html>
